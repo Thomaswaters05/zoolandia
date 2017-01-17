@@ -4,12 +4,13 @@ namespace Zoolandia.Animals
 {
     
     class Dog : Animal
-    {
-        // Define simple properties for a Red Panda
-       public string Color { get; set; }
-       public string Species { get; set; }
-       public string Age { get; set; }
+    { 
+        //constructor function
+         public Dog ()
+        {
+            this.name = "Lois";
 
+        }
        public string Noise()
        {
            return "RUFF!!";

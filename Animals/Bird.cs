@@ -5,14 +5,19 @@ namespace Zoolandia.Animals
    
     class Bird : Animal
     {
-        // Define simple properties for a Red Panda
-       public string Color { get; set; }
-       public string Species { get; set; }
-       public string Age { get; set; }
+        //constructor function
+        public Bird ()
+        {
+            this.name = "Peter";
 
+        }
        public string Noise()
        {
            return "Chirp!!";
        }
+        public override void Food()
+        {
+            Console.WriteLine("By golly, this is overriding this! Birds like bird food");
+        }
     }
 }

@@ -2,17 +2,21 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    
     class Cat : Animal
     {
-        // Define simple properties for a Red Panda
-       public string Color { get; set; }
-       public string Species { get; set; }
-       public string Age { get; set; }
+        //constructor function
+        public Cat ()
+        {
+            this.name = "Stewie";
 
+        }
        public string Noise()
        {
            return "Meow!!";
        }
+         public override void Food()
+        {
+            Console.WriteLine("All cats eat cat food");
+        }
     }
 }
