@@ -1,12 +1,16 @@
 using System;
 using Zoolandia.Animals;
 
- namespace Zoolandia
- {
-     public class Program
+namespace Zoolandia
+{
+    public class Program
      {
           public static void Main(string[] args)
           {
+              //ZOOLANDIA 1
+              Console.WriteLine("Zoolandia 1 Below:");
+              Console.WriteLine("");
+              
               var MyDog = new Dog(); 
               MyDog.Color = "white";
               MyDog.Species = "pitbull";
@@ -17,7 +21,7 @@ using Zoolandia.Animals;
               MyCat.Color = "gray";
               MyCat.Species = "tabby";
               MyCat.Age = "young";
-              Console.WriteLine(MyCat.Noise());
+              Console.WriteLine(MyCat.CatNoise(2));
 
              var MyBird = new Bird(); 
               MyBird.Color = "yellow";
@@ -35,7 +39,7 @@ using Zoolandia.Animals;
               MyCat.Food();  //this will return what is in our cat virtual void
               MyDog.Food(); //you arent overriding so it will return the default animal food()
 
-              //constructor examples below
+              //constructor method below
               var MyCatsName = new Cat();
               Console.WriteLine($"My cats name is {MyCat.name}.");
               var MyDogsName = new Dog();
@@ -43,6 +47,18 @@ using Zoolandia.Animals;
               var MyBirdsName = new Bird();
               Console.WriteLine($"My birds name is {MyBirdsName.name}.");
               
+
+              Console.WriteLine("");
+              Console.WriteLine("Zoolandia 3 Below:");
+
+              //ZOOLANDIA 3
+              //overloaded constructor method below
+              var MyOverloadCat = new Cat("Gordon");
+              Console.WriteLine(MyOverloadCat.name);
+            
+             
+              Console.WriteLine(MyCat.CatNoise(2));
+
           }
      }
  }

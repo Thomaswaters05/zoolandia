@@ -10,9 +10,20 @@ namespace Zoolandia.Animals
             this.name = "Stewie";
 
         }
-       public string Noise()
+        //overloaded constructor function(s) below
+       public Cat (string newName)
+        {
+            this.name = newName;
+
+        }
+          public string CatNoise (int numOfMeows)
        {
-           return "Meow!!";
+           string noise = "";
+           for (var i = 0; i < numOfMeows; i++)
+           {
+               noise += "MEOW!!";
+           }
+           return noise;
        }
          public override void Food()
         {

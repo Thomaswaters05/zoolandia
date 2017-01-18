@@ -19,5 +19,6 @@ namespace Zoolandia.Animals
         {
             Console.WriteLine("All animals eat food");
         }
+
     }
 }
