@@ -2,15 +2,15 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    class Animal
+    public class Animal
     {
-        public string name { get; set; }
-         // Define simple properties for a Red Panda
+       public string Name { get; set; }
        public string Color { get; set; }
        public string Species { get; set; }
-       public string Age { get; set; }
-
-        public static void sleep ()
+       public int Age { get; set; }
+       public string Size { get; set; }
+    
+        public virtual void Sleep ()
         {
             Console.WriteLine("Animal is now sleeping");
         }

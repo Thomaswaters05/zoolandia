@@ -3,12 +3,12 @@ using System;
 namespace Zoolandia.Animals
 {
    
-    class Bird : Animal
+    public class Bird : Animal
     {
         //constructor function
         public Bird ()
         {
-            this.name = "Peter";
+            this.Name = "Peter";
 
         }
        public string Noise()

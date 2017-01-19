@@ -2,18 +2,18 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    class Cat : Animal
+    public class Cat : Animal
     {
         //constructor function
         public Cat ()
         {
-            this.name = "Stewie";
+            this.Name = "Stewie";
 
         }
         //overloaded constructor function(s) below
        public Cat (string newName)
         {
-            this.name = newName;
+            this.Name = newName;
 
         }
           public string CatNoise (int numOfMeows)
