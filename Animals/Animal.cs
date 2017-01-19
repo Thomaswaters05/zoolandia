@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    public class Animal
+    public class Animal : Izoo
     {
        public string Name { get; set; }
        public string Color { get; set; }
@@ -19,6 +19,18 @@ namespace Zoolandia.Animals
         {
             Console.WriteLine("All animals eat food");
         }
+
+         //interfaces example below
+        public bool Attacks()
+        {
+            return true;
+        }
+
+        public void Eats()
+        {
+            Console.WriteLine("Yum");
+        }
+
 
     }
 }

@@ -82,6 +82,13 @@ namespace Zoolandia
               Console.WriteLine($"My bird is {BirdSizeAge.Size}and {BirdSizeAge.Age} years old.");
 
 
+              Console.WriteLine("");
+              Console.WriteLine("Zoolandia 5-6 Below:");
+              //ZOOLANDIA 4
+              //overloaded constructor methods with total zoo below
+             var FinalAnimal = new Corgi();
+             FinalAnimal.Eats();
+
           }
      }
  }
